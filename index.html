@@ -81,7 +81,22 @@
             >
                 <div class="d-flex w-100 justify-content-between">
                     <h5 class="mb-1">ウミヘビ</h5>
-                    <small>>_<</small>
+                    <small>
+                        <div
+                            class="hint-element"
+                            data-hint="インターフェースを担当"
+                            id="a"
+                        >
+                            >_<
+                        </div>
+                        <div
+                            class="hint-element"
+                            data-hint="内部の言語仕様・トランスパイラを設計"
+                            id="b"
+                        >
+                            ski.com
+                        </div>
+                    </small>
                 </div>
                 <p class="mb-1">
                     むつかしいプログラミング言語の文法を覚える必要なしに
@@ -89,6 +104,8 @@
                 </p>
             </a>
         </div>
+
+        <script src="script.js"></script>
 
         <script
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -114,6 +131,16 @@
 
         .list-group-item a {
             color: black;
+        }
+
+        .hint-box {
+            border-width: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            background-color: white;
+
+            position: absolute;
+            right: 1vh;
         }
     </style>
 </html>
