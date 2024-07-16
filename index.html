@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Homebrew Languages Club</title>
+        <link rel="icon" href="/icon.png" sizes="928x1115" type="image/png" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -14,14 +15,23 @@
 
     <body>
         <div class="jumbotron">
-            <h1 class="display-4">Homebrew Languages Club</h1>
-            <p class="lead">
-                The technical community of Geek who develop homebrew programming
-                languages share knowledges each other feel free.
-            </p>
-            <p class="lead">
-                自作言語を開発してるGeek達が自由に知識を教え合う技術コミュニティです。
-            </p>
+            <div class="row">
+                <div class="col-4 col-md-2">
+                    <img src="icon.png" />
+                </div>
+                <div class="col-2 col-md-10">
+                    <h1 class="display-4">Homebrew Languages Club</h1>
+                    <p class="lead">
+                        The technical community of Geek who develop homebrew
+                        programming languages share knowledges each other feel
+                        free.
+                    </p>
+                    <p class="lead">
+                        自作言語を開発してるGeek達が自由に知識を教え合う技術コミュニティです。
+                    </p>
+                </div>
+            </div>
+
             <hr class="my-4" />
             <p class="lead">
                 <a
@@ -140,6 +150,18 @@
     <style>
         body {
             padding: 3vh;
+        }
+
+        .jumbotron {
+            padding: 3vh;
+        }
+
+        .col-md-2 {
+            margin-right: -50px;
+        }
+
+        img {
+            width: 200px;
         }
 
         .list-group-item a {
