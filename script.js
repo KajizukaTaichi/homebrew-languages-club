@@ -2,7 +2,7 @@
 const hintElements = document.querySelectorAll(".hint-element");
 
 // カーソルが要素にかざされたら、ヒントを表示する
-hintElements.forEach((element) => {
+hintElements.forEach(function (element) {
   element.addEventListener("mouseover", () => {
     const hintText = element.getAttribute("data-hint");
     // ヒントを表示する処理
