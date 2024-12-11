@@ -11,6 +11,23 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
             crossorigin="anonymous"
         />
+        <script src="script.js"></script>
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
     <body>
@@ -48,144 +65,133 @@
                 >
             </p>
         </div>
+        <div id="main">
+            <h2>作品紹介</h2>
+            <div class="list-group">
+                <a
+                    href="https://kajizukataichi.github.io/lamuta/"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Lamuta</h5>
+                        <small>梶塚太智</small>
+                    </div>
+                    <p class="mb-1">
+                        ラムダ計算の数式がそのまま書ける関数型プログラミング言語
+                    </p>
+                </a>
 
-        <div class="list-group">
-            <a
-                href="https://github.com/KajizukaTaichi/lamuta"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Lamuta</h5>
-                    <small>梶塚太智</small>
-                </div>
-                <p class="mb-1">
-                    Functional programming language that can write lambda
-                    calculus intuitively
-                </p>
-            </a>
+                <a
+                    href="https://github.com/KajizukaTaichi/idol"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">idol</h5>
+                        <small>梶塚太智</small>
+                    </div>
+                    <p class="mb-1">
+                        Handy programming language with the Goal
+                        directed-evaluation for prototyping
+                    </p>
+                </a>
 
-            <a
-                href="https://github.com/KajizukaTaichi/idol"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">idol</h5>
-                    <small>梶塚太智</small>
-                </div>
-                <p class="mb-1">
-                    Handy programming language with the Goal directed-evaluation
-                    for prototyping
-                </p>
-            </a>
+                <a
+                    href="https://github.com/KajizukaTaichi/normscript"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">NormScript</h5>
+                        <small>梶塚太智</small>
+                    </div>
+                    <p class="mb-1">何の変哲も無い普通のプログラミング言語</p>
+                </a>
 
-            <a
-                href="https://github.com/KajizukaTaichi/normscript"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">NormScript</h5>
-                    <small>梶塚太智</small>
-                </div>
-                <p class="mb-1">何の変哲も無い普通のプログラミング言語</p>
-            </a>
+                <a
+                    href="https://ubazame.duckdns.org/Umihebi/"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">ウミヘビ</h5>
+                        <small>
+                            <div
+                                class="hint-element"
+                                data-hint="インターフェースを担当"
+                                id="a"
+                            >
+                                >_<
+                            </div>
+                            <div
+                                class="hint-element"
+                                data-hint="内部の言語仕様・トランスパイラを設計"
+                                id="b"
+                            >
+                                ski.com
+                            </div>
+                        </small>
+                    </div>
+                    <p class="mb-1">
+                        むつかしいプログラミング言語の文法を覚える必要なしに
+                        サクサクっと日常言語でプログラミングができるウェブソフト
+                    </p>
+                </a>
 
-            <a
-                href="https://ubazame.duckdns.org/Umihebi/"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">ウミヘビ</h5>
-                    <small>
-                        <div
-                            class="hint-element"
-                            data-hint="インターフェースを担当"
-                            id="a"
-                        >
-                            >_<
-                        </div>
-                        <div
-                            class="hint-element"
-                            data-hint="内部の言語仕様・トランスパイラを設計"
-                            id="b"
-                        >
-                            ski.com
-                        </div>
-                    </small>
-                </div>
-                <p class="mb-1">
-                    むつかしいプログラミング言語の文法を覚える必要なしに
-                    サクサクっと日常言語でプログラミングができるウェブソフト
-                </p>
-            </a>
+                <a
+                    href="https://gradia-lang.github.io/"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Gradia</h5>
+                        <small>梶塚太智</small>
+                    </div>
+                    <p class="mb-1">
+                        Lisp like programming language that can give type
+                        annotation for gradual typing
+                    </p>
+                </a>
 
-            <a
-                href="https://gradia-lang.github.io/"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Gradia</h5>
-                    <small>梶塚太智</small>
-                </div>
-                <p class="mb-1">
-                    Lisp like programming language that can give type annotation
-                    for gradual typing
-                </p>
-            </a>
+                <a
+                    href="https://pravda-lang.github.io/"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Pravda</h5>
+                        <small>梶塚太智</small>
+                    </div>
+                    <p class="mb-1">
+                        A functional programming language that best of both
+                        worlds between Haskell and Lisp
+                    </p>
+                </a>
 
-            <a
-                href="https://pravda-lang.github.io/"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Pravda</h5>
-                    <small>梶塚太智</small>
-                </div>
-                <p class="mb-1">
-                    A functional programming language that best of both worlds
-                    between Haskell and Lisp
-                </p>
-            </a>
-
-            <a
-                href="https://stack-community.github.io/"
-                class="list-group-item list-group-item-action flex-column align-items-start"
-            >
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Stack</h5>
-                    <small>梶塚太智</small>
-                </div>
-                <p class="mb-1">
-                    Powerful script language with stack-oriented approach
-                </p>
-            </a>
+                <a
+                    href="https://stack-community.github.io/"
+                    class="list-group-item list-group-item-action flex-column align-items-start"
+                >
+                    <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Stack</h5>
+                        <small>梶塚太智</small>
+                    </div>
+                    <p class="mb-1">
+                        Powerful script language with stack-oriented approach
+                    </p>
+                </a>
+            </div>
         </div>
-
-        <script src="script.js"></script>
-
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
     </body>
 
     <style>
-        body {
-            padding: 3vh;
+        h2,
+        h1 {
+            border-bottom: 0.05em solid transparent;
+            border-image: linear-gradient(to right, cornflowerblue, lightblue) 1;
         }
 
-        .jumbotron {
-            padding: 3vh;
+        body {
+            font-size: larger;
+        }
+
+        #main {
+            margin: 2%;
         }
 
         .col-md-2 {
